@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtMunch", "ButtMunch.csproj", "{209F68F8-A0C9-C521-9332-47746787B939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtMunch.Editor", "ButtMunch.Editor.csproj", "{350A5197-0514-3BC9-860E-9FAD138BD2EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{209F68F8-A0C9-C521-9332-47746787B939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{209F68F8-A0C9-C521-9332-47746787B939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{209F68F8-A0C9-C521-9332-47746787B939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{209F68F8-A0C9-C521-9332-47746787B939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{350A5197-0514-3BC9-860E-9FAD138BD2EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350A5197-0514-3BC9-860E-9FAD138BD2EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350A5197-0514-3BC9-860E-9FAD138BD2EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350A5197-0514-3BC9-860E-9FAD138BD2EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
