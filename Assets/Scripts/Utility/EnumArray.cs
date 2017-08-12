@@ -2,10 +2,12 @@
 using System;
 using System.Collections;
 using System.Linq;
+using UnityEngine;
 
 [Serializable]
-public class EnumArray<KeyType, Type> : IEnumTypeProvider, IArray where KeyType : struct, IConvertible {
+public class EnumArray<KeyType, Type> where KeyType : struct, IConvertible {
 
+	[SerializeField]
 	private Type[] m_Array = new Type[System.Enum.GetValues(typeof(KeyType)).Cast<int>().Max()];
 
 	public int Length {
