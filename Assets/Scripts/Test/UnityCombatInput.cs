@@ -3,14 +3,6 @@ using UnityEngine;
 
 public class UnityCombatInput : ButtBehaviour, IProducer<CombatCommand> {
 
-	[System.Serializable]
-	private class EArray : EnumArray<CombatCommand, bool> { };
-
-	[SerializeField, IsEnumArray]
-	private EArray commands;
-
-	private ConsumerDelegate<CombatCommand> m_Consumers;
-
 	public ConsumerDelegate<CombatCommand> Consumers {
 		get {
 			return m_Consumers;

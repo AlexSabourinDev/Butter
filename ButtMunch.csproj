@@ -100,9 +100,7 @@
     <Compile Include="Assets\Scripts\Utility\ButtBehaviour.cs" />
     <Compile Include="Assets\Scripts\Utility\CollectionUtilities.cs" />
     <Compile Include="Assets\Scripts\Utility\EnumArray.cs" />
-    <Compile Include="Assets\Scripts\Utility\IArray.cs" />
     <Compile Include="Assets\Scripts\Utility\ICollider.cs" />
-    <Compile Include="Assets\Scripts\Utility\IEnumProvider.cs" />
     <Compile Include="Assets\Scripts\Utility\ITrigger.cs" />
     <Compile Include="Assets\Scripts\Utility\TypeUtilities.cs" />
   </ItemGroup>
