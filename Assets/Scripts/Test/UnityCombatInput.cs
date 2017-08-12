@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class UnityCombatInput : ButtBehaviour, IProducer<CombatCommand> {
 
+	private ConsumerDelegate<CombatCommand> m_Consumers;
+
 	public ConsumerDelegate<CombatCommand> Consumers {
 		get {
 			return m_Consumers;
