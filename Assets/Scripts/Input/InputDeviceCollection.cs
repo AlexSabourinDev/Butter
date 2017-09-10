@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 // Keeps track of all the input devices added to it and notifies others when a device is added
@@ -30,7 +31,7 @@ public class InputDeviceCollection {
 		Debug.Assert(m_InputDevices.Contains(device) == false);
 		m_InputDevices.Add(device);
 
-		OnDeviceAdded(device);
+		if(OnDeviceAdded != null) OnDeviceAdded(device);
 	}
 
 	public void Remove(IInputDevice device) {
@@ -38,11 +39,16 @@ public class InputDeviceCollection {
 		Debug.Assert(m_InputDevices.Contains(device));
 		m_InputDevices.Remove(device);
 
-		OnDeviceRemoved(device);
+		if(OnDeviceRemoved != null) OnDeviceRemoved(device);
 	}
 
 	public bool Contains(IInputDevice device) {
 
 		return m_InputDevices.Contains(device);
+	}
+
+	public List<IInputDevice>.Enumerator GetEnumerator() {
+
+		return m_InputDevices.GetEnumerator();
 	}
 }

@@ -1,14 +1,18 @@
 ﻿
-public enum InputState {
-	
+public enum InputEventType {
+
 	Down,
-	Held,
 	Up,
-	None
+	Start,
 }
 
+public delegate void OnInputReceivedDelegate(InputEventType eventType, IInputData data);
+public delegate void OnDeviceDisconnectDelegate();
+
+// The input device will invoke events whenever input is received, allowing other classes to handle
+// the functionality
 public interface IInputDevice {
 
-	float QueryAxis(InputKey key);
-	InputState QueryState(InputKey key);
+	OnInputReceivedDelegate OnInputReceived { get; set; }
+	OnDeviceDisconnectDelegate OnDeviceDisconnect { get; set; }
 }

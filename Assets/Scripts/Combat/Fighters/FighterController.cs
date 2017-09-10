@@ -8,7 +8,7 @@ public class FighterController : ButtBehaviour, ICombatController {
 		if(command == CombatCommand.Right) {
 			transform.position += Vector3.right;
 		}
-		else {
+		else if(command == CombatCommand.Left) {
 			transform.position += Vector3.left;
 		}
 	}
