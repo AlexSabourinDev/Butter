@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\Combat\Input\CombatConverterMap.cs" />
     <Compile Include="Assets\Scripts\Combat\Input\CombatInputConverter.cs" />
     <Compile Include="Assets\Scripts\Debug\DisplayPlayerSlots.cs" />
+    <Compile Include="Assets\Scripts\Debug\WatchData.cs" />
     <Compile Include="Assets\Scripts\ICopier.cs" />
     <Compile Include="Assets\Scripts\Input\IInputData.cs" />
     <Compile Include="Assets\Scripts\Input\IInputDevice.cs" />

@@ -5,9 +5,16 @@ namespace ButtDebug {
 
 	public class DisplayPlayerSlots : ButtBehaviour {
 
-		private void OnGUI() {
+		private IWatchValue m_WatchValue = null;
 
-			GUILayout.Label(PlayerDataSlots.Length.ToString());
+		protected override void Awake() {
+			base.Awake();
+			m_WatchValue = WatchData.AddWatchValue(new LabelWatchValue(() => { return "Player Slots: " + PlayerDataSlots.Length.ToString(); }));
+		}
+
+		protected override void OnDestroy() {
+			base.OnDestroy();
+			WatchData.RemoveWatchValue(m_WatchValue);
 		}
 	}
 }
