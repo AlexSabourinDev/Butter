@@ -128,7 +128,6 @@
     <Compile Include="Assets\Scripts\Editor\PropertyDrawers\AsInterfacePropertyDrawer.cs" />
     <Compile Include="Assets\Scripts\Editor\PropertyDrawers\IsEnumArrayPropertyDrawer.cs" />
     <Compile Include="Assets\Scripts\Editor\Tests\CombatBufferTest.cs" />
-    <Compile Include="Assets\Scripts\Editor\Tests\CombatInputGenerationTest.cs" />
     <Compile Include="Assets\Scripts\Editor\Windows\Debug\WatchWindow.cs" />
   </ItemGroup>
   <ItemGroup />

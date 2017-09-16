@@ -2,8 +2,8 @@
 public enum CombatCommand {
 
 	None,
-	Up,
-	Down,
+	Right,
 	Left,
-	Right
+	Up,
+	Down
 }

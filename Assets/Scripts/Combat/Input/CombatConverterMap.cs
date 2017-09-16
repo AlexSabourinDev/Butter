@@ -5,12 +5,12 @@
 public class CombatConverterMap {
 
 	// -Data-
-	public Dictionary<InputEventType, CombatCommand> m_CombatMap = new Dictionary<InputEventType, CombatCommand>();
+	private Dictionary<InputEventType, CombatCommand> m_CombatMap = new Dictionary<InputEventType, CombatCommand>();
 
 	// -Public API-
 
 	// Map the event type and input data to a CombatCommand
-	public CombatCommand Map(InputEventType eventType, IInputData inputData) {
+	public CombatCommand Map(InputEventType eventType) {
 
 		CombatCommand command = CombatCommand.None;
 		if (m_CombatMap.ContainsKey(eventType)) {

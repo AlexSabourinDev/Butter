@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 internal class InputDeviceListener {
 
-	public delegate void OnInputReceivedDelegate(IInputDevice inputDevice, InputEventType type, IInputData inputData);
+	public delegate void OnInputReceivedDelegate(IInputDevice inputDevice, InputEventType type);
 	public delegate void OnDeviceDisconnectDelegate(InputDeviceListener listener);
 
 	private IInputDevice m_RegisteredDevice;
@@ -38,8 +38,8 @@ internal class InputDeviceListener {
 	}
 
 
-	private void OnInputReceived(InputEventType inputEvent, IInputData data) {
-		m_OnInputReceived(m_RegisteredDevice, inputEvent, data);
+	private void OnInputReceived(InputEventType inputEvent) {
+		m_OnInputReceived(m_RegisteredDevice, inputEvent);
 	}
 
 	private void OnInputDisconnect() {
@@ -76,7 +76,7 @@ public class PlayerInputListener : ButtBehaviour {
 		m_Listeners.Add(new InputDeviceListener(device, OnInputReceived, RemoveListener));
 	}
 
-	private void OnInputReceived(IInputDevice device, InputEventType eventType, IInputData data) {
+	private void OnInputReceived(IInputDevice device, InputEventType eventType) {
 
 		if (eventType == InputEventType.Start) {
 

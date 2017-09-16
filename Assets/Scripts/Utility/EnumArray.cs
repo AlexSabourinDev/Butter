@@ -44,6 +44,14 @@ public class EnumArray<KeyType, Type> where KeyType : struct, IConvertible {
 		}
 	}
 
+	public EnumArray() { }
+
+	public EnumArray(Type defaultValue) {
+		for(int i = 0; i < Length; i++) {
+			m_Array[i] = defaultValue;
+		}
+	}
+
 	public System.Object GetElement(int index) {
 
 		return this[index];

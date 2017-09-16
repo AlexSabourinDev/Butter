@@ -13,13 +13,11 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile>
-    </CompilerResponseFile>
+    <CompilerResponseFile></CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2017.1.0f3</UnityVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <LangVersion>4</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -85,36 +83,31 @@
     <Compile Include="Assets\Scripts\Combat\CombatBuffer.cs" />
     <Compile Include="Assets\Scripts\Combat\CombatCommand.cs" />
     <Compile Include="Assets\Scripts\Combat\Fighters\FighterController.cs" />
-    <Compile Include="Assets\Scripts\Combat\Fighters\StartupBinder.cs" />
+    <Compile Include="Assets\Scripts\Combat\Fighters\FighterMovement.cs" />
     <Compile Include="Assets\Scripts\Combat\ICombatController.cs" />
     <Compile Include="Assets\Scripts\Combat\Input\CombatConverterMap.cs" />
     <Compile Include="Assets\Scripts\Combat\Input\CombatInputConverter.cs" />
     <Compile Include="Assets\Scripts\Debug\DisplayPlayerSlots.cs" />
     <Compile Include="Assets\Scripts\Debug\WatchData.cs" />
     <Compile Include="Assets\Scripts\ICopier.cs" />
-    <Compile Include="Assets\Scripts\Input\IInputData.cs" />
     <Compile Include="Assets\Scripts\Input\IInputDevice.cs" />
-    <Compile Include="Assets\Scripts\Input\InputDeviceCollection.cs" />
-    <Compile Include="Assets\Scripts\Input\InputKey.cs" />
     <Compile Include="Assets\Scripts\Input\IInputSystem.cs" />
+    <Compile Include="Assets\Scripts\Input\InputDeviceCollection.cs" />
     <Compile Include="Assets\Scripts\Input\UnityInput\UnityInputDevice.cs" />
     <Compile Include="Assets\Scripts\Input\UnityInput\UnityInputSystem.cs" />
     <Compile Include="Assets\Scripts\IProducer.cs" />
     <Compile Include="Assets\Scripts\Persistent\PlayerDataSlots.cs" />
     <Compile Include="Assets\Scripts\SceneControllers\CharacterSelect\PlayerInputListener.cs" />
     <Compile Include="Assets\Scripts\SceneControllers\GoToScene.cs" />
-    <Compile Include="Assets\Scripts\Test\TestCommandInput.cs" />
-    <Compile Include="Assets\Scripts\Test\TestInputDeviceListener.cs" />
-    <Compile Include="Assets\Scripts\Test\UnityCombatInput.cs" />
     <Compile Include="Assets\Scripts\Utility\ButtBehaviour.cs" />
     <Compile Include="Assets\Scripts\Utility\CollectionUtilities.cs" />
     <Compile Include="Assets\Scripts\Utility\DontDestroyOnLoad.cs" />
     <Compile Include="Assets\Scripts\Utility\EnumArray.cs" />
     <Compile Include="Assets\Scripts\Utility\ICollider.cs" />
     <Compile Include="Assets\Scripts\Utility\ITrigger.cs" />
+    <Compile Include="Assets\Scripts\Utility\TimeController.cs" />
     <Compile Include="Assets\Scripts\Utility\TypeUtilities.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
 </Project>

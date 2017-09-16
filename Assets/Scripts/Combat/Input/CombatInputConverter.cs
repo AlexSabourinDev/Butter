@@ -43,14 +43,14 @@ public class CombatInputConverter {
 		m_InputDevice = null;
 	}
 
-	private void OnInputReceived(InputEventType eventType, IInputData data) {
+	private void OnInputReceived(InputEventType eventType) {
 		if (m_Controller == null) return;
 		if (m_Converter == null) {
 			UnityEngine.Debug.LogWarning("No converter map bound to the CombatInputConverter!");
 			return;
 		}
 
-		CombatCommand command = m_Converter.Map(eventType, data);
+		CombatCommand command = m_Converter.Map(eventType);
 		m_Controller.ReceiveCommand(command);
 	}
 }
