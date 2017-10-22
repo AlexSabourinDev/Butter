@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-
-
-namespace ButtDebug {
+﻿namespace ButtDebug {
 
 	public class DisplayPlayerSlots : ButtBehaviour {
 
@@ -9,7 +6,7 @@ namespace ButtDebug {
 
 		protected override void Awake() {
 			base.Awake();
-			m_WatchValue = WatchData.AddWatchValue(new LabelWatchValue(() => { return "Player Slots: " + PlayerDataSlots.Length.ToString(); }));
+			m_WatchValue = WatchData.AddWatchValue(new LabelWatchValue(() => { return "Player Slots: " + PlayerDataSlots.Count.ToString(); }));
 		}
 
 		protected override void OnDestroy() {

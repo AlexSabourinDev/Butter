@@ -28,14 +28,14 @@ public class UnityInputDevice : IInputDevice {
 
 	public void QueryInputs() {
 
-		if (Input.GetKeyDown(KeyCode.Return)) {
+		if (Input.GetKeyUp(KeyCode.Return)) {
 			m_OnInputReceived(InputEventType.Start);
 		}
 
 		if (Input.GetKeyDown(KeyCode.RightArrow)) {
 			m_OnInputReceived(InputEventType.Right);
 		}
-		else if(Input.GetKeyDown(KeyCode.LeftArrow)) {
+		else if (Input.GetKeyDown(KeyCode.LeftArrow)) {
 			m_OnInputReceived(InputEventType.Left);
 		}
 
@@ -44,6 +44,13 @@ public class UnityInputDevice : IInputDevice {
 		}
 		else if (Input.GetKeyDown(KeyCode.DownArrow)) {
 			m_OnInputReceived(InputEventType.Down);
+		}
+
+		if (Input.GetKeyDown(KeyCode.K)) {
+			m_OnInputReceived(InputEventType.KeyK);
+		}
+		if(Input.GetKeyDown(KeyCode.J)) {
+			m_OnInputReceived(InputEventType.KeyJ);
 		}
 
 	}

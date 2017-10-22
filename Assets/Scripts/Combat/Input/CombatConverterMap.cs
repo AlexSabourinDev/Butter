@@ -7,6 +7,7 @@ public class CombatConverterMap {
 	// -Data-
 	private Dictionary<InputEventType, CombatCommand> m_CombatMap = new Dictionary<InputEventType, CombatCommand>();
 
+
 	// -Public API-
 
 	// Map the event type and input data to a CombatCommand
@@ -18,5 +19,9 @@ public class CombatConverterMap {
 		}
 
 		return command;
+	}
+
+	public void SetCombatMap(Dictionary<InputEventType, CombatCommand> map) {
+		m_CombatMap = map;
 	}
 }

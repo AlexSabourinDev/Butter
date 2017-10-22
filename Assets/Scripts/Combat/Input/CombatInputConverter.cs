@@ -3,6 +3,7 @@
 public class CombatInputConverter {
 
 	// -Data-
+
 	private IInputDevice m_InputDevice;
 	private ICombatController m_Controller;
 
@@ -31,6 +32,7 @@ public class CombatInputConverter {
 		UnityEngine.Debug.Assert(converter != null);
 		m_Converter = converter;
 	}
+
 
 	// -Private API-
 

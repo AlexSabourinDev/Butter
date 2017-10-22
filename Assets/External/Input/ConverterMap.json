@@ -1,0 +1,28 @@
+{
+  "m_InputMap": [
+    {
+      "m_InputKey": "Left",
+      "m_CombatCommand": "Left"
+    },
+    {
+      "m_InputKey": "Right",
+      "m_CombatCommand": "Right"
+    },
+    {
+      "m_InputKey": "Up",
+      "m_CombatCommand": "Up"
+    },
+    {
+      "m_InputKey": "Down",
+      "m_CombatCommand": "Down"
+    },
+	{
+      "m_InputKey": "KeyJ",
+      "m_CombatCommand": "Light"
+    },
+	{
+      "m_InputKey": "KeyK",
+      "m_CombatCommand": "Heavy"
+    }
+  ]
+}

@@ -70,12 +70,16 @@ public class CombatBuffer {
 	// Match an expression with our most recent commands
 	public bool Match(CombatCommand[] commandExpression) {
 
+		if(Count < commandExpression.Length) {
+			return false;
+		}
+
 		UnityEngine.Debug.Assert(commandExpression.Length > 0);
 		UnityEngine.Debug.Assert(commandExpression.Length <= m_Commands.Count);
 
 		for (int match = 0; match < commandExpression.Length; match++) {
 
-			if(Read(Count - 1 - match) != commandExpression[match]) {
+			if(Read(Count - commandExpression.Length + match) != commandExpression[match]) {
 				return false;
 			}
 		}

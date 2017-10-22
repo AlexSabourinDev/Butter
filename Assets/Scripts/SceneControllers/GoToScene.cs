@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GoToScene : ButtBehaviour {
 
@@ -9,6 +8,6 @@ public class GoToScene : ButtBehaviour {
 	protected override void Awake() {
 		base.Awake();
 
-		SceneManager.LoadScene(m_SceneName);
+		SceneController.TransitionToScene(m_SceneName);
 	}
 }

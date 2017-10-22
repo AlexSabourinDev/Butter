@@ -5,6 +5,8 @@ public enum InputEventType {
 	Right,
 	Down,
 	Up,
+	KeyK,
+	KeyJ,
 	Start,
 }
 

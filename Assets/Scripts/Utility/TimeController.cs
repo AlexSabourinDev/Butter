@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 
 public enum TimeCategory {
-	Gameplay
+	Gameplay = 0,
+	Max
 }
 
 public static class TimeController {

@@ -1,0 +1,16 @@
+{
+  "m_CharacterName": "Dummy",
+  "m_CharacterTemplate": "Default",
+  "m_ComboList": {
+    "m_Sequences": [
+      {
+        "m_ComboName": "SuperAwesomeCombo",
+        "m_ComboSequence": [
+          "Heavy",
+          "Heavy",
+          "Light"
+        ]
+      }
+    ]
+  }
+}

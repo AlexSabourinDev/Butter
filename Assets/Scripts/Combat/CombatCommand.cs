@@ -5,5 +5,7 @@ public enum CombatCommand {
 	Right,
 	Left,
 	Up,
-	Down
+	Down,
+	Light,
+	Heavy
 }
